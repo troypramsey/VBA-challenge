@@ -1,5 +1,5 @@
 Attribute VB_Name = "Module1"
-Sub VBAhw()
+Sub VBAc()
 
 
 
@@ -222,29 +222,4 @@ ThisWorkbook.ActiveSheet.Cells.EntireColumn.AutoFit
 
 Next
 
-End Sub
-Sub ClearSheet()
-'
-' USED TO CLEAR SHEETS DURING TESTING
-'
-
-'
-
-For ws = 1 To Worksheets.Count
-    If ActiveSheet.Index = Worksheets.Count Then
-    Worksheets(1).Activate
-Else
-    ActiveSheet.Next.Activate
-End If
-
-    Range("I:I,J:J,K:K,L:L,O:O,P:P,Q:Q").Select
-    Range("Q1").Activate
-    Selection.ClearContents
-    With Selection.Interior
-        .Pattern = xlNone
-        .TintAndShade = 0
-        .PatternTintAndShade = 0
-    End With
-    
-Next
 End Sub
