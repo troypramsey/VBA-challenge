@@ -108,9 +108,11 @@ End If
         
         ' Using the open price and Yearly Change to assign the Percentage Change
             
+            ' Catchall for 0 denominators to avoid Div0 errors 
             If open_price = 0 Then
                 y_pct = 0
             Else
+            ' Percentage change for non-0 denominator values
                 y_pct = y_change / open_price
             End If
             
