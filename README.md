@@ -1,4 +1,4 @@
-# VBA Homework
+# VBA Challenge: VBA of Wall Street
 
 ### Results by Year
 
